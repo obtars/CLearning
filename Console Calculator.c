@@ -3,7 +3,6 @@ Simple Console Calculator
 Author: Tawhid Monowar
 */
 
-
 #include <stdio.h>
 int main()
 {
