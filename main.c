@@ -1,23 +1,15 @@
 #include <stdio.h>
 int main()
 {
-    char myChar;
-    int myInt;
-    float myFloat;
-    double myDouble;
-    _Bool myBool;
+    enum company {GOOGLE,FACEBOOK,XEROX,YAHOO =10,EBAY,MICROSOFT};
 
-    myChar = 'C';
-    myInt = 20;
-    myFloat = 20.1465;
-    myDouble = 4.53e+11;
-    myBool = 0;
+    enum company ek = GOOGLE;
+    enum company dui = XEROX;
+    enum company tin = EBAY;
 
-    printf("int = %i\n", myInt);
-    printf("Char = %c\n", myChar);
-    printf("float = %f\n", myFloat);
-    printf("Double = %e\n", myDouble);
-    printf("Bool = %d\n", myBool);
+    printf("Xerox is:%d\n",dui);
+    printf("Google is:%d\n",ek);
+    printf("Ebay is:%d\n",tin);
 
     return 0;
 }
