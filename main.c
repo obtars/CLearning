@@ -1,15 +1,27 @@
+/*
+Convert minutes to years, days and seconds
+Author: Tawhid Monowar
+*/
+
 #include <stdio.h>
 int main()
 {
-    enum company {GOOGLE,FACEBOOK,XEROX,YAHOO =10,EBAY,MICROSOFT};
+    int minutes,minutesInaYear = 525600,minutesInaDay = 1440;
+    double days,years,seconds;
 
-    enum company ek = GOOGLE;
-    enum company dui = XEROX;
-    enum company tin = EBAY;
+    printf("Convert minutes to years, days and seconds, Author: Tawhid Monowar\n\n");
+    printf("Enter the number of minutes:");
+    scanf("%d",&minutes);
 
-    printf("Xerox is:%d\n",dui);
-    printf("Google is:%d\n",ek);
-    printf("Ebay is:%d\n",tin);
+    years = minutes/ (double)minutesInaYear;
+    printf("\n%d minutes = %f Years\n",minutes,years);
+    days = minutes/ (double)minutesInaDay;
+    printf("%d minutes = %f Days\n",minutes,days);
+    seconds = minutes * 60;
+    printf("%d minutes = %f Seconds\n\n",minutes,seconds);
+
+
 
     return 0;
 }
+
