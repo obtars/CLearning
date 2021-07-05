@@ -1,22 +1,15 @@
 #include<stdio.h>
+
+
 int main()
 {
-   int grades [10];
-   int i;
-   int sum;
-   float ava = 0.0f;
+    int index;
+    int days [12] = {31,28,31,30,31,30,31,31,30,31,30,31};
 
-   printf("Enter The Grades:\n");
-
-   for (i=0; i<10; i++)
-   {
-       printf("%2u=",i+1);
-       scanf("%d",&grades[i]);
-       sum += grades[i];
-   }
-   ava = (float)sum/10;
-
-   printf("The Ava is:%.2f",ava);
+    for (index = 0;index<=12;index++)
+    {
+        printf("Month %d has %d days\n",index+1,days[index]);
+    }
 
    return 0;
 }
