@@ -28,6 +28,8 @@ int main()
     {
         printf("Sorry %d is not a Prime Number.\n",i);
     }
+    
+    return 0;
 }
 
 
@@ -109,6 +111,4 @@ Calculator()
     {
         printf("You Entered a Wrong Number! Try Again");
     }
-
-    return 0;
 }
