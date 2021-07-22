@@ -1,24 +1,21 @@
-#include<stdio.h>
-#include<string.h>
-int main()
+#include <stdio.h>
+
+int main(void) {
+
+    int i;
+    i = lanth("Tawhid");
+    printf("%d",i);
+    return 0;
+}
+
+lanth(char w[])
 {
-
-    char name[] = "";
-    char copy[] = "";
-
-    scanf("%s",name);
-    scanf("%s",copy);
-
-
-    if (strcmp(name,copy)==1)
+    int j;
+    int i;
+    for(i=0;w[i]!='/0';i++)
     {
-        printf("Boro");
-    }else
-    {
-        printf("Suto");
-
+        j++;
     }
 
-
-    return 0;
+    return j;
 }
