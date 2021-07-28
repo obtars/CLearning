@@ -1,7 +1,6 @@
 # depslib dependency file v1.0
-1626973792 source:c:\users\tauhid monwar\documents\c programming language\c learning\main.c
+1627385602 source:c:\users\tauhid monwar\documents\c programming language\c learning\main.c
 	<stdio.h>
-	<string.h>
 
 1624385638 source:c:\users\tauhid monwar\documents\c programming language\c learning\console calculator.c
 	<stdio.h>

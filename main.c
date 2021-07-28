@@ -1,21 +1,21 @@
 #include <stdio.h>
 
-int main(void) {
-
-    int i;
-    i = lanth("Tawhid");
-    printf("%d",i);
-    return 0;
-}
-
-lanth(char w[])
+void main()
 {
-    int j;
-    int i;
-    for(i=0;w[i]!='/0';i++)
-    {
-        j++;
-    }
+   int n,i,j;
+   printf("Enter The Value Of N: ");
+   scanf("%d",&n);
 
-    return j;
+   for(i=0;i<=n;i++)
+   {
+     for(j=1;j<=n-i;j++)
+     {
+        printf(" ");
+     }
+     for(j=1;j<=2*i-1;j++)
+     {
+         printf("*");
+     }
+     printf("\n");
+   }
 }
