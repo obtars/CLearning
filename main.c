@@ -1,21 +1,20 @@
 #include <stdio.h>
+#include <stddef.h>
 
-void main()
+void main(void)
 {
-   int n,i,j;
-   printf("Enter The Value Of N: ");
-   scanf("%d",&n);
+    int number = 0;
+    int *pnumber = NULL;
 
-   for(i=0;i<=n;i++)
-   {
-     for(j=1;j<=n-i;j++)
-     {
-        printf(" ");
-     }
-     for(j=1;j<=2*i-1;j++)
-     {
-         printf("*");
-     }
-     printf("\n");
-   }
+    number = 10;
+    printf("number address = %p\n",&number);
+    printf("number value = %d\n\n", number);
+
+    pnumber=&number;
+    printf("pnumber address = %p\n",&pnumber);
+    printf("pnumber value = %d\n",*pnumber);
+    printf("pnumber size = %d bytes\n",sizeof(pnumber));
+
+    return 0;
+
 }
