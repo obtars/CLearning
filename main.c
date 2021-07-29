@@ -3,17 +3,11 @@
 
 void main(void)
 {
-    int number = 0;
-    int *pnumber = NULL;
+    long num1 = 0L;
+    long nun2 = 0L;
+    long *pnum = NULL;
 
-    number = 10;
-    printf("number address = %p\n",&number);
-    printf("number value = %d\n\n", number);
-
-    pnumber=&number;
-    printf("pnumber address = %p\n",&pnumber);
-    printf("pnumber value = %d\n",*pnumber);
-    printf("pnumber size = %d bytes\n",sizeof(pnumber));
+    pnum = &num1;
 
     return 0;
 
