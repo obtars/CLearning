@@ -1,5 +1,3 @@
-#include<stdio.h>
-
 int main()
 {
     char name[]="Name\t: Tawhid Monowar",
@@ -7,3 +5,4 @@ int main()
     printf("%s\n%s\n%s",name,dob,mobile);
     return 0;
 }
+
