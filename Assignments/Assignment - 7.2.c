@@ -38,7 +38,7 @@ int main()
         {
           for (j=0;j<bmCol;j++)
           {
-              printf("%d\t", aMatrix[i][j]+bMatrix[i][j]);
+              printf("%d\t", aMatrix[i][j]-bMatrix[i][j]);
           }
           printf("\n");
         }
