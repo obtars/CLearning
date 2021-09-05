@@ -1,20 +1,20 @@
 #include <stdio.h>
-
 int main()
 {
-    int x,i,sum=0;
-    printf("How many number do you want to enter? ");
-    scanf("%d",&x);
-    int n[x];
-    printf("Entre The Numbers One by one.\n");
-    for (i=1;i<=x;i++)
+    int n;
+    printf("Enter your mark");
+    scanf("%d",&n);
+    if (n>0 && n<100)
     {
-        scanf("%d",&n[i]);
-        sum = sum + n[i];
+        if (n<33)
+            printf("F");
+        else if (n<=50)
+        {
+            printf("C");
+        }
     }
-
-    printf("Sum = %d\n",sum);
-    printf("Avarage = %.3f",(float)sum/x);
+    else
+        printf("You entred a worng nomber");
 
     return 0;
 }
