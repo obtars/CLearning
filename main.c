@@ -16,5 +16,5 @@ int main()
     else
         printf("You entred a worng nomber");
 
-    return 0;
+
 }
