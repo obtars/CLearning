@@ -1,24 +1,13 @@
 #include <stdio.h>
-#include <stddef.h>
+
 int main()
 {
-    int n = 5;
-    int *i = &n;
-    int *janina = NULL;
+    int x = 5454;
+    int *const location = &x;
 
-    printf("Value: %d\n",n);
-    printf("Value Address: %p\n",&n);
-    printf("Pointer: %p\n",i);
-    printf("Pointer Value: %d\n",*i);
-    printf("Pointer Address: %p\n",&i);
-
-    if(janina)
-    {
-        printf("Value Ase!");
-    }else
-    {
-        printf("Value Nai!");
-    }
+    location = 4;
+    printf("%p\n",location);
+    printf("%d",*location);
 
     return 0;
 }
