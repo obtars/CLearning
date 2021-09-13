@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-int swapData(int a, int b){
+int swapValue(int a, int b){
     int temp;
 
     temp = a;
@@ -15,6 +15,6 @@ int main(){
 
     int a = 5, b = 8;
     printf("a = %d\nb = %d\n\n",a,b);
-    swapData(a,b);
+    swapValue(a,b);
     return 0;
 }
