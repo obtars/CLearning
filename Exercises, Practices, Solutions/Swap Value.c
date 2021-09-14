@@ -1,20 +1,22 @@
 #include <stdio.h>
 
-int swapValue(int a, int b){
+int swapData(int *x, int *y){
     int temp;
 
-    temp = a;
-    a = b;
-    b = temp;
-    printf("a = %d\nb = %d\n",a,b);
+    temp = *x;
+    *x = *y;
+    *y = temp;
 
-    return 0;
+    return;
 }
 
 int main(){
 
     int a = 5, b = 8;
     printf("a = %d\nb = %d\n\n",a,b);
-    swapValue(a,b);
+
+    swapData(&a, &b);
+
+    printf("a = %d\nb = %d\n",a,b);
     return 0;
 }
