@@ -1,14 +1,12 @@
 #include <stdio.h>
-#include <string.h>
 
 int main()
 {
-    char n[] = "Tawhid";
-    int x;
-
-    x = strlen(n);
-    printf("%d",x);
-
+    int i,j=65;
+    for(i=0;i<26;i++,j++)
+    {
+        printf("%c, ",j);
+    }
 
     return 0;
 }
