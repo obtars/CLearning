@@ -6,7 +6,7 @@ int main()
     printf("Enter The Value of N: ");
     scanf("%d",&n);
 
-    for(raw=n; raw>=1; raw--)
+    for(raw=1; raw<=n; raw++)
     {
         for(col=1; col<=raw; col++)
         {
