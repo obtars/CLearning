@@ -2,16 +2,29 @@
 
 int main()
 {
-    struct date
+    int raw, col, n;
+
+    printf("Enter The Value Of N: ");
+    scanf("%d",&n);
+
+    for(raw=1;raw<=n;raw++)
     {
-        int day;
-        int month;
-        int year;
-    };
+        for(col=1;col<=n;col++)
+        {
+            if(raw==1)
+            {
+                printf("r");
+            }else if (col==1)
+            {
+                printf("c");
+            }
+            else{
+                printf("0");
+            }
 
-    struct date today = {9,14,2021};
-
-    printf("%d/%d/%d",today.day,today.month,today.year);
+        }
+        printf("\n");
+    }
 
     return 0;
 }
