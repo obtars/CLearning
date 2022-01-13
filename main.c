@@ -1,17 +1,13 @@
-#include <stdio.h>
+#include<stdio.h>
+#include<string.h>
+
 int main()
 {
-    int i,s;
-    scanf("%d",&s);
-    int arr[s];
+    char ar[20] = "19";
+    int x;
 
-    for(i=1;i<=s;i++)
-    {
-        scanf("%d",&arr[i]);
-    }
+    x = atoi(ar);
+    printf("%d",x+1);
 
-    for(i=s;i>0;i--)
-    {
-        printf("%d\n",arr[i]);
-    }
+    return 0;
 }
